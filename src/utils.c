@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   utils.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rileone <riccardo.leone@student.42fir      +#+  +:+       +#+        */
+/*   By: chsassi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/18 15:49:32 by rileone           #+#    #+#             */
-/*   Updated: 2024/02/18 15:52:47 by rileone          ###   ########.fr       */
+/*   Created: 2024/01/09 18:04:32 by chsassi           #+#    #+#             */
+/*   Updated: 2024/02/10 15:56:10 by chsassi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "so_long.h"
 
 int	check_args(int ac, char *map_file)
@@ -19,9 +20,7 @@ int	check_args(int ac, char *map_file)
 		print_error(INVALID_ARGS2);
 	else if (ac == 2)
 	{
-		if (strlen_gnl(map_file) < 4
-			|| ft_strncmp(&map_file[strlen_gnl(map_file) - 4], ".ber", 4) != 0
-			|| open(map_file, O_RDONLY) == -1)
+		if (ft_strlen(map_file) < 4 || ft_strncmp(&map_file[ft_strlen(map_file) - 4], ".ber", 4) != 0 || open(map_file, O_RDONLY) == -1)
 			print_error(INVALID_FORMAT);
 		else
 			return (1);

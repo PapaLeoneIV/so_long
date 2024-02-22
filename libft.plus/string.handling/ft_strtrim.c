@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rileone <riccardo.leone@student.42fir      +#+  +:+       +#+        */
+/*   By: chsassi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/18 15:19:53 by rileone           #+#    #+#             */
-/*   Updated: 2024/02/18 15:19:59 by rileone          ###   ########.fr       */
+/*   Created: 2023/11/10 14:33:58 by chsassi           #+#    #+#             */
+/*   Updated: 2023/11/10 14:33:59 by chsassi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 static int	occurrence(const char s1, const char *set)

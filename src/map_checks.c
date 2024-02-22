@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   map_checks.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rileone <riccardo.leone@student.42fir      +#+  +:+       +#+        */
+/*   By: chsassi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/18 15:49:31 by rileone           #+#    #+#             */
-/*   Updated: 2024/02/18 15:49:34 by rileone          ###   ########.fr       */
+/*   Created: 2024/01/22 17:06:01 by chsassi           #+#    #+#             */
+/*   Updated: 2024/02/10 15:56:10 by chsassi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "so_long.h"
 
 int	check_mtx_rows(char *mtx)

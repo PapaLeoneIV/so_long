@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rileone <riccardo.leone@student.42fir      +#+  +:+       +#+        */
+/*   By: chsassi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/18 15:19:50 by rileone           #+#    #+#             */
-/*   Updated: 2024/02/18 15:19:58 by rileone          ###   ########.fr       */
+/*   Created: 2023/11/16 17:36:24 by chsassi           #+#    #+#             */
+/*   Updated: 2023/11/21 15:58:58 by chsassi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "ft_printf.h"
 
 int	ft_printf(const char *str, ...)

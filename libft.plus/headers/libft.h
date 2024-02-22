@@ -51,8 +51,8 @@ long	ft_atol(const char *str);
 void	ft_bzero(void *s, size_t n);
 
 /**
- * @brief Allocates memory for an array of nmemb elements of 
- * size bytes each and returns a pointer to the allocated memory.
+ * @brief Allocates memory for an array of nmemb 
+ * elements of size bytes each and returns a pointer to the allocated memory.
  * The memory is set to zero.
  * @param nmemb the number of elements to create.
  * @param size the size of each element.
@@ -103,9 +103,11 @@ void	free_mtx(char **mtx);
 int		ft_isalnum(int c);
 
 /**
- * @brief Checks if the given character is an alphabetic character (a-z or A-Z).
+ * @brief Checks if the given character is an 
+ * alphabetic character (a-z or A-Z).
  * @param c an integer representing a character.
- * @return 1 if c is an alphabetic character (a-z or A-Z), otherwise returns 0.
+ * @return 1 if c is an alphabetic character 
+ * (a-z or A-Z), otherwise returns 0.
  */
 int		ft_isalpha(int c);
 
@@ -154,15 +156,16 @@ void	ft_lstadd_front(t_list **lst, t_list *new);
 /**
  * @brief Deletes all elements of a linked list.
  * @param lst a pointer to the pointer to the first element of the list.
- * @param del a pointer to the function used to delete the content of an element.
+ * @param del a pointer to the function used to 
+ * delete the content of an element.
  */
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 
 /**
  * @brief Deletes an element from a linked list.
  * @param lst a pointer to the element to be deleted.
- * @param del a pointer to the function used to delete 
- * the content of the element.
+ * @param del a pointer to the function used to delete
+ *  the content of the element.
  */
 void	ft_lstdelone(t_list *lst, void (*del)(void *));
 
@@ -181,8 +184,8 @@ void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstlast(t_list *lst);
 
 /**
- * @brief Creates a new list resulting from the application of 
- * a function to all elements of a linked list.
+ * @brief Creates a new list resulting from the application of a 
+ * function to all elements of a linked list.
  * @param lst a pointer to the first element of the list.
  * @param f a pointer to the function to be applied.
  * @param del a pointer to the function used to delete the content of an element.
@@ -209,8 +212,8 @@ int		ft_lstsize(t_list *lst);
  * @param s a pointer to the block of memory to be searched.
  * @param c the character to be located.
  * @param n the number of bytes to be searched.
- * @return a pointer to the located character, or NULL 
- * if the character does not appear in the block of memory.
+ * @return a pointer to the located character, or NULL if
+ *  the character does not appear in the block of memory.
  */
 void	*ft_memchr(const void *s, int c, size_t n);
 
@@ -219,10 +222,10 @@ void	*ft_memchr(const void *s, int c, size_t n);
  * @param ptr1 a pointer to the first block of memory.
  * @param ptr2 a pointer to the second block of memory.
  * @param n the number of bytes to be compared.
- * @return an integer less than, equal to, or greater 
- * than zero if the first block of memory is found,
- * respectively, to be less than, to match, or be    
- * greater than the second block of memory.
+ * @return an integer less than, equal to, or greater than 
+ * zero if the first block of memory is found, 
+ * respectively, to be less than, to match,
+ * or be greater than the second block of memory.
  */
 int		ft_memcmp(const void *ptr1, const void *ptr2, size_t n);
 
@@ -236,8 +239,8 @@ int		ft_memcmp(const void *ptr1, const void *ptr2, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 
 /**
- * @brief Copies n bytes from memory area src to memory area dest,
- * even if they overlap.
+ * @brief Copies n bytes from memory area src to memory 
+ * area dest, even if they overlap.
  * @param dest a pointer to the destination memory area.
  * @param src a pointer to the source memory area.
  * @param n the number of bytes to be copied.
@@ -262,8 +265,8 @@ void	*ft_memset(void *s, int c, size_t len);
 void	ft_putchar_fd(char c, int fd);
 
 /**
- * @brief Outputs a string followed by a newline 
- * character to the specified file descriptor.
+ * @brief Outputs a string followed by a newline character
+ * to the specified file descriptor.
  * @param s a pointer to the string to be output.
  * @param fd the file descriptor.
  */
@@ -296,8 +299,8 @@ char	**ft_split(const char *str, char c);
  * @brief Locates the first occurrence of a character in a string.
  * @param s a pointer to the string to be searched.
  * @param c the character to be located.
- * @return a pointer to the located character,
- * or NULL if the character does not appear in the string.
+ * @return a pointer to the located character, or NULL if 
+ * the character does not appear in the string.
  */
 char	*ft_strchr(const char *s, int c);
 
@@ -309,8 +312,8 @@ char	*ft_strchr(const char *s, int c);
 char	*ft_strdup(const char *s1);
 
 /**
- * @brief Applies a function to each character of a string,
- * providing its index as first argument.
+ * @brief Applies a function to each character of a string, providing 
+ * its index as first argument.
  * @param s a pointer to the string.
  * @param f a pointer to the function to be applied.
  */
@@ -334,8 +337,8 @@ char	*ft_strjoin(char const *s1, char const *s2);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 
 /**
- * @brief Copies up to size - 1 characters from
- * the NUL-terminated string src to dst.
+ * @brief Copies up to size - 1 characters from the NUL-terminated
+ * string src to dst.
  * @param dst a pointer to the destination string.
  * @param src a pointer to the source string.
  * @param size the size of the destination buffer.
@@ -363,8 +366,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
  * @param s2 a pointer to the second string.
  * @param n the maximum number of characters to compare.
  * @return an integer less than, equal to, or greater than zero 
- * if s1 is found, respectively, to be less than, 
- * to match, or be greater than s2.
+ * if s1 is found, respectively, 
+ * to be less than, to match, or be greater than s2.
  */
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 
@@ -382,8 +385,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t len);
  * @brief Locates the last occurrence of a character in a string.
  * @param s a pointer to the string to be searched.
  * @param c the character to be located.
- * @return a pointer to the located character,
- * or NULL if the character does not appear in the string.
+ * @return a pointer to the located character, or 
+ * NULL if the character does not appear in the string.
  */
 char	*ft_strrchr(const char *s, int c);
 
@@ -407,16 +410,16 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 /**
  * @brief Converts a lowercase letter to uppercase.
  * @param c an integer representing a character.
- * @return the uppercase equivalent of c, 
- * if c is a lowercase letter, otherwise returns c.
+ * @return the uppercase equivalent of c, if c is a lowercase 
+ * letter, otherwise returns c.
  */
 int		ft_toupper(int c);
 
 /**
  * @brief Converts an uppercase letter to lowercase.
  * @param c an integer representing a character.
- * @return the lowercase equivalent of c,
- * if c is an uppercase letter, otherwise returns c.
+ * @return the lowercase equivalent of c, if c is an 
+ * uppercase letter, otherwise returns c.
  */
 int		ft_tolower(int c);
 

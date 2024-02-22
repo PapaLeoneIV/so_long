@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   position.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rileone <riccardo.leone@student.42fir      +#+  +:+       +#+        */
+/*   By: chsassi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/18 15:49:32 by rileone           #+#    #+#             */
-/*   Updated: 2024/02/18 15:49:34 by rileone          ###   ########.fr       */
+/*   Created: 2024/01/23 16:14:56 by chsassi           #+#    #+#             */
+/*   Updated: 2024/02/10 15:56:10 by chsassi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "so_long.h"
 
 t_axis	player_position(char **mtx)

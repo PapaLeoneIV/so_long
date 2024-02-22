@@ -5,10 +5,11 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: rileone <riccardo.leone@student.42fir      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/18 15:19:50 by rileone           #+#    #+#             */
-/*   Updated: 2024/02/18 15:19:58 by rileone          ###   ########.fr       */
+/*   Created: 2024/02/22 17:24:08 by rileone           #+#    #+#             */
+/*   Updated: 2024/02/22 17:24:13 by rileone          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 long	ft_atol(const char *str)

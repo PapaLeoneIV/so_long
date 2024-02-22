@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rileone <riccardo.leone@student.42fir      +#+  +:+       +#+        */
+/*   By: chsassi <chsassi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/18 15:19:53 by rileone           #+#    #+#             */
-/*   Updated: 2024/02/18 15:19:59 by rileone          ###   ########.fr       */
+/*   Created: 2023/10/11 19:11:16 by chsassi           #+#    #+#             */
+/*   Updated: 2023/10/14 16:17:38 by chsassi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"

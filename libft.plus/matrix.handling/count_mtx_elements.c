@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   count_mtx_elements.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rileone <riccardo.leone@student.42fir      +#+  +:+       +#+        */
+/*   By: chsassi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/18 15:19:53 by rileone           #+#    #+#             */
-/*   Updated: 2024/02/18 15:19:59 by rileone          ###   ########.fr       */
+/*   Created: 2024/02/01 20:04:33 by chsassi           #+#    #+#             */
+/*   Updated: 2024/02/01 20:04:34 by chsassi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 int	count_cols(char **mtx)
@@ -16,6 +17,8 @@ int	count_cols(char **mtx)
 	int	cols;
 
 	cols = 0;
+	if (count_rows(mtx) < 1)
+		return (0);
 	while (mtx[0][cols])
 		cols++;
 	return (cols);
@@ -26,7 +29,7 @@ int	count_rows(char **mtx)
 	int	rows;
 
 	rows = 0;
-	while (mtx[rows] != NULL)
+	while (mtx && mtx[rows] != NULL)
 		rows++;
 	return (rows);
 }

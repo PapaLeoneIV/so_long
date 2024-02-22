@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   enemy_handling.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rileone <riccardo.leone@student.42fir      +#+  +:+       +#+        */
+/*   By: chsassi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/18 15:49:31 by rileone           #+#    #+#             */
-/*   Updated: 2024/02/18 15:49:34 by rileone          ###   ########.fr       */
+/*   Created: 2024/02/07 23:38:11 by chsassi           #+#    #+#             */
+/*   Updated: 2024/02/10 15:56:10 by chsassi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "so_long.h"
 
 int	get_seed(int (*rand)(), int range)

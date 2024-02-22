@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   map_handling.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rileone <riccardo.leone@student.42fir      +#+  +:+       +#+        */
+/*   By: chsassi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/18 15:49:31 by rileone           #+#    #+#             */
-/*   Updated: 2024/02/18 15:49:34 by rileone          ###   ########.fr       */
+/*   Created: 2024/01/21 21:17:53 by chsassi           #+#    #+#             */
+/*   Updated: 2024/02/10 15:56:10 by chsassi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "so_long.h"
 
 int	flood_fill(t_container *pMap, char **map_visited,

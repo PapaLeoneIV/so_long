@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   memory_management.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rileone <riccardo.leone@student.42fir      +#+  +:+       +#+        */
+/*   By: chsassi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/18 15:19:53 by rileone           #+#    #+#             */
-/*   Updated: 2024/02/18 15:19:59 by rileone          ###   ########.fr       */
+/*   Created: 2024/02/01 15:05:40 by chsassi           #+#    #+#             */
+/*   Updated: 2024/02/01 20:13:14 by chsassi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 char	**mtx_alloc(int rows, int cols)
@@ -36,7 +37,7 @@ char	**copy_mtx(char **mtx)
 	int		rows;
 
 	rows = -1;
-	res = ft_calloc(count_rows(mtx), sizeof(char *));
+	res = ft_calloc(count_rows(mtx) + 1, sizeof(char *));
 	while (mtx[++rows])
 		res[rows] = ft_strdup(mtx[rows]);
 	return (res);

@@ -9,6 +9,7 @@
 /*   Updated: 2024/02/10 15:56:34 by chsassi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #ifndef SO_LONG_H
 # define SO_LONG_H
 
@@ -102,18 +103,15 @@ typedef struct s_container
 
 /**
  * @brief Frees the memory allocated for the map.
- * This function is responsible for freeing the memory 
- * allocated for the map in the t_container structure.
+ * This function is responsible for freeing the memory allocated for the map in the t_container structure.
  * @param pContainer A pointer to the t_container structure.
  * @return void
  */
 void	free_map(t_container *pContainer);
 
 /**
- * @brief Frees the memory allocated for the
- * position in the t_container structure.
- * This function is responsible for freeing the memory
- * allocated for the position in the t_container structure.
+ * @brief Frees the memory allocated for the position in the t_container structure.
+ * This function is responsible for freeing the memory allocated for the position in the t_container structure.
  * @param pContainer A pointer to the t_container structure.
  * @return void
  */
@@ -121,8 +119,7 @@ void	free_position(t_container *pContainer);
 
 /**
  * @brief Frees the memory allocated for the images in the t_container structure.
- * This function is responsible for freeing the memory allocated
- * for the images in the t_container structure.
+ * This function is responsible for freeing the memory allocated for the images in the t_container structure.
  * @param pContainer A pointer to the t_container structure.
  * @return void
 */
@@ -130,18 +127,15 @@ void	free_images(t_container *pContainer);
 
 /**
  * @brief Quits the game and frees everything.
- * This function is responsible for freeing the memory allocated
- * for the t_container structure.
+ * This function is responsible for freeing the memory allocated for the t_container structure.
  * @param pContainer A pointer to the t_container structure.
  * @return An integer value indicating the status of the game.
  */
 int		quit_game(t_container *pContainer);
 
 /**
- * @brief Closes the window and frees the memory
- * allocated for the t_container structure.
- * This function is responsible for closing the window 
- *and freeing the memory allocated for the t_container structure.
+ * @brief Closes the window and frees the memory allocated for the t_container structure.
+ * This function is responsible for closing the window and freeing the memory allocated for the t_container structure.
  * @param keycode The key code representing the user input.
  * @param pContainer A pointer to the t_container structure.
  * @return An integer value indicating the status of the game.
@@ -150,26 +144,20 @@ int		close_window(int keycode, t_container *pContainer);
 
 /**
  * @brief Gets a random seed within a specified range.
- * This function takes a pointer to a random number generator
- * function and a range as parameters.
- * It returns an integer value representing 
- * the random seed within the specified range.
+ * This function takes a pointer to a random number generator function and a range as parameters.
+ * It returns an integer value representing the random seed within the specified range.
  * @param rand A pointer to the random number generator function.
  * @param range The range within which the random seed should be generated.
- * @return An integer value representing the 
- * random seed within the specified range.
+ * @return An integer value representing the random seed within the specified range.
 */
 int		get_seed(int (*rand)(), int range);
 
 /**
  * @brief Checks the surrounding tiles of an enemy.
- * This function checks the tiles around an enemy in a
- * specified direction to determine if it is a valid move.
+ * This function checks the tiles around an enemy in a specified direction to determine if it is a valid move.
  * @param pContainer A pointer to the t_container structure.
- * @param enemy A pointer to the t_axis structure
- * representing the enemy's position.
- * @param direction An integer value representing the 
- * direction to check (0: up, 1: down, 2: left, 3: right).
+ * @param enemy A pointer to the t_axis structure representing the enemy's position.
+ * @param direction An integer value representing the direction to check (0: up, 1: down, 2: left, 3: right).
  * @return An integer value indicating if the move is valid (1) or not (0).
 */
 int		check_around_enemy(t_container *pContainer,
@@ -177,21 +165,17 @@ int		check_around_enemy(t_container *pContainer,
 
 /**
  * @brief Moves the enemy in a specified direction.
- * This function moves the enemy in a specified 
- * direction based on the given parameters.
+ * This function moves the enemy in a specified direction based on the given parameters.
  * @param pContainer A pointer to the t_container structure.
- * @param enemy A pointer to the t_axis structure 
- * representing the enemy's position.
- * @param direction An integer value representing 
- * the direction to move (0: up, 1: down, 2: left, 3: right).
+ * @param enemy A pointer to the t_axis structure representing the enemy's position.
+ * @param direction An integer value representing the direction to move (0: up, 1: down, 2: left, 3: right).
  * @return void
 */
 void	enemy_moves(t_container *pContainer, t_axis *enemy);
 
 /**
  * @brief Renders the player image on the window.
- * This function renders the player image on the 
- * window based on the given parameters.
+ * This function renders the player image on the window based on the given parameters.
  * @param pContainer A pointer to the t_container structure.
  * @return void
 */
@@ -199,8 +183,7 @@ void	render_player_image(t_container *pContainer);
 
 /**
  * @brief Renders images on the window.
- * This function renders the images on the window 
- * based on the given parameters.
+ * This function renders the images on the window based on the given parameters.
  * @param pContainer A pointer to the t_container structure.
  * @return void
 */
@@ -299,11 +282,8 @@ int		check_rectangle(char **map, int rows, int cols);
 
 /**
  * @brief Performs flood fill algorithm on a map to find a specific character.
- * This function recursively explores the map
- * starting from a given position (seeker) and 
- * searches for a specific character (to_find).
- * It marks the visited positions on the map_visited 
- * array to avoid revisiting them.
+ * This function recursively explores the map starting from a given position (seeker) and searches for a specific character (to_find).
+ * It marks the visited positions on the map_visited array to avoid revisiting them.
  * 
  * @param pMap A pointer to the container structure that holds the map data.
  * @param map_visited A 2D array representing the visited positions on the map.
@@ -317,10 +297,8 @@ int		flood_fill(t_container *pMap, char **map_visited,
 /**
  * @brief Checks the reachability of elements in an array.
  * 
- * This function takes a pointer to a container and a 
- * copy of a map as parameters.
- * It checks the reachability of elements in the 
- * array and returns an integer value.
+ * This function takes a pointer to a container and a copy of a map as parameters.
+ * It checks the reachability of elements in the array and returns an integer value.
  * 
  * @param pContainer A pointer to the container.
  * @param map_copy A copy of the map.
@@ -331,8 +309,7 @@ int		check_array_reachability(t_container *pContainer, char **map_copy);
 /**
  * @brief Checks the reachability of elements in the container.
  * 
- * This function checks if all elements in the
- *  container can be reached from a starting point.
+ * This function checks if all elements in the container can be reached from a starting point.
  * 
  * @param pContainer A pointer to the container.
  * @return Returns an integer indicating the reachability status:
@@ -409,8 +386,7 @@ t_axis	*enemies_position(char **mtx, t_container *pContainer);
 
 /**
  * @brief Handles the movement of the player.
- * This function is responsible for handling
- * the movement of the player based on the provided keycode.
+ * This function is responsible for handling the movement of the player based on the provided keycode.
  * @param keycode The keycode representing the direction of movement.
  * @param pContainer A pointer to the container struct.
  */
@@ -418,16 +394,14 @@ void	handle_player_movement(int keycode, t_container *pContainer);
 
 /**
  * @brief Handles the movement of the enemy.
- * This function is responsible for handling the movement 
- * of the enemy based on the provided keycode.
+ * This function is responsible for handling the movement of the enemy based on the provided keycode.
  * @param pContainer A pointer to the container struct.
  */
 void	handle_enemy_movement(t_container *pContainer);
 
 /**
  * @brief Handles the collection of collectibles.
- * This function is responsible for handling
- * the collection of collectibles by the player.
+ * This function is responsible for handling the collection of collectibles by the player.
  * @param pCont A pointer to the container struct.
  */
 void	handle_collectibles(t_container *pCont);
@@ -495,39 +469,32 @@ void	print_game_start(void);
 
 /**
  * @brief Checks the arguments passed to the program.
- * This function verifies the number of arguments passed to 
- * the program and validates the map file.
+ * This function verifies the number of arguments passed to the program and validates the map file.
  * @param ac The number of command-line arguments.
  * @param map_file The path to the map file.
- * @return Returns 0 if the arguments are valid,
- * otherwise returns a non-zero value.
+ * @return Returns 0 if the arguments are valid, otherwise returns a non-zero value.
  */
 int		check_args(int ac, char *map_file);
 
 /**
  * @brief Checks if the given character is a valid element in the game map.
- * This function checks if the character is a valid element
- * that can be present in the game map.
+ * This function checks if the character is a valid element that can be present in the game map.
  * @param c The character to be checked.
- * @return Returns an integer value indicating whether 
- * the character is a valid element (1) or not (0).
+ * @return Returns an integer value indicating whether the character is a valid element (1) or not (0).
  */
 int		check_element(char c);
 
 /**
  * @brief Checks the number of elements in the game map.
- * This function counts the number of elements in the 
- * game map and returns the count.
+ * This function counts the number of elements in the game map and returns the count.
  * @param map The game map represented as a 2D array of characters.
- * @return Returns an integer value indicating the 
- * number of elements in the game map
+ * @return Returns an integer value indicating the number of elements in the game map
 */
 int		check_elem_number(char **map);
 
 /**
  * @brief Assigns the exit position in the game container.
- * This function is responsible for assigning the exit 
- * position in the game container.
+ * This function is responsible for assigning the exit position in the game container.
  * @param pContainer A pointer to the game container.
  * @return void
  */
